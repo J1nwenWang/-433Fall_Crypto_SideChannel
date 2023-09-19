@@ -1,0 +1,11 @@
+This binary accepts a 16-character input as the key. If each input character matches the corresponding character of the key in the program, additional computation will be executed. Your goal is to exploit timing side-channels to determine the key. Hint: The key consists solely of lower case letters and does not contain any numbers or symbols. The key is matched from left to right. The program exits upon the first character mismatch.
+
+Run the binary using the following command:
+
+$ ./side-channel [your 16-character key]
+
+For example: 
+
+$ ./side-channel aaaaaaaaaaaaaaaa
+
+The output will display the total delay of the program's execution and indicate whether the input matches the key.
